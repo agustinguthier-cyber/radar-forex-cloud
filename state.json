@@ -1,7 +1,8 @@
 {
   "dia": "2026-07-28",
-  "senalesHoy": 1,
+  "senalesHoy": 2,
   "ultimaSenal": {
-    "AUD/USD|BUY": 1785268297193
+    "AUD/USD|BUY": 1785268297193,
+    "GBP/USD|SELL": 1785276298961
   }
 }
