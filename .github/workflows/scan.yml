@@ -1,0 +1,37 @@
+name: Radar Forex Scanner
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # cada 15 minutos, todos los días
+  workflow_dispatch: {}       # permite ejecutarlo manualmente con el botón "Run workflow"
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Ejecutar el escáner
+        env:
+          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node scanner.js
+
+      - name: Guardar el estado (cooldown de señales)
+        run: |
+          git config user.name "radar-forex-bot"
+          git config user.email "actions@github.com"
+          git add state.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Actualiza estado del escáner [skip ci]"
+          git push
+        continue-on-error: true
