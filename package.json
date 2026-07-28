@@ -1,0 +1,12 @@
+{
+  "name": "radar-forex-cloud",
+  "version": "1.0.0",
+  "description": "Escáner de señales forex que corre en GitHub Actions y envía alertas a Telegram, sin depender del PC del usuario.",
+  "type": "module",
+  "scripts": {
+    "start": "node scanner.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

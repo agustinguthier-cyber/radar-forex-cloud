@@ -1,0 +1,29 @@
+{
+  "lote": 0.01,
+  "riesgo": 0.80,
+  "tp1": 2.00,
+  "tp2": 3.00,
+  "tf": "5min",
+  "sens": "balanceado",
+  "htf": true,
+  "fib": "info",
+  "spreads": {
+    "EURUSD": 1.6,
+    "GBPUSD": 1.9,
+    "USDJPY": 1.6,
+    "USDCHF": 2.1,
+    "USDCAD": 2.0,
+    "AUDUSD": 1.8
+  },
+  "_ATENCION_cripto": "Estos valores de criptoSpreads y criptoContratos son PLACEHOLDERS. Verifícalos en tu MT5 antes de usar dinero real: clic derecho sobre el símbolo (BTCUSD, ETHUSD, XRPUSD) → Especificación → revisa 'Contract size' (contrato) y el spread en vivo en Observación de Mercado.",
+  "criptoContratos": {
+    "BTCUSD": 1,
+    "ETHUSD": 1,
+    "XRPUSD": 10000
+  },
+  "criptoSpreads": {
+    "BTCUSD": 15,
+    "ETHUSD": 1.5,
+    "XRPUSD": 0.001
+  }
+}
