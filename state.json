@@ -1,5 +1,7 @@
 {
   "dia": "2026-07-28",
-  "senalesHoy": 0,
-  "ultimaSenal": {}
+  "senalesHoy": 1,
+  "ultimaSenal": {
+    "AUD/USD|BUY": 1785268297193
+  }
 }
