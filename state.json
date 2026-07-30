@@ -1,12 +1,12 @@
 {
   "dia": "2026-07-30",
-  "senalesHoy": 3,
+  "senalesHoy": 4,
   "ultimaSenal": {
     "AUD/USD|BUY": 1785268297193,
     "GBP/USD|SELL": 1785276298961,
     "USD/CAD|BUY": 1785280507768,
     "AUD/USD|SELL": 1785325166602,
     "USD/CHF|SELL": 1785395325969,
-    "XRP/USD|BUY": 1785411274737
+    "XRP/USD|BUY": 1785441230185
   }
 }
