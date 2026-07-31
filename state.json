@@ -1,6 +1,6 @@
 {
   "dia": "2026-07-31",
-  "senalesHoy": 4,
+  "senalesHoy": 6,
   "ultimaSenal": {
     "AUD/USD|BUY": 1785268297193,
     "GBP/USD|SELL": 1785276298961,
@@ -10,6 +10,7 @@
     "XRP/USD|BUY": 1785441230185,
     "EUR/USD|SELL": 1785472581653,
     "USD/CAD|SELL": 1785530999294,
-    "XRP/USD|SELL": 1785538337269
+    "XRP/USD|SELL": 1785542049773,
+    "ETH/USD|SELL": 1785542033281
   }
 }
